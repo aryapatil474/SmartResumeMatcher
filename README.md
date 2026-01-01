@@ -1,88 +1,91 @@
-# TalentMatch: Resume-Job Matching Platform
+CareerConnect – Resume–Job Matching Platform
 
-TalentMatch provides a seamless interface for companies and candidates, streamlining the process of resume and job description matching through advanced NLP techniques.
+CareerConnect is a web-based application that streamlines the process of matching candidate resumes with job descriptions using advanced Natural Language Processing (NLP) techniques. It provides an efficient and user-friendly interface for both candidates and companies.
 
-## Features
+🚀 Features
+🔹 Main Menu & Navigation
 
-### Main Menu
+Clean and intuitive user interface
 
-- Easy Navigation to different sections like login, about page, registration page, and access multiple articles.
-- Simple and intuitive interface
+Easy navigation to Login, Registration, About, and Articles sections
 
-![Main Menu GIF](gifs/main.gif)
+🔐 User Authentication
 
-### User Authentication
+Secure user registration and login
 
-- Secure user registration and login
-- Password encryption
+Encrypted password storage
 
-  ![Company Registration GIF](/gifs/register.gif)
+👤 User Roles
+Candidate Registration & Login
 
-- **Candidate Registration:**
-  - Candidates can securely register on the platform.
-  
-- **Company Registration:**
-  - Companies can register to post job descriptions and find matching resumes.
+Candidates can securely register and log in
 
-### User Login
+Upload resumes in PDF format after authentication
 
-- **Candidate Login:**
+Company Registration & Login
 
-  - Secure login for candidates to upload resumes.
-  
-  ![Candidate Login GIF](gifs/login_candidate.gif)
-  
-- **Company Login:**
+Companies can register and log in
 
-  - Secure login for companies to post job descriptions and find matching resumes.
-  
-  ![Company Login GIF](gifs/login_company.gif)
-  
-### For Candidates
+Post job descriptions and search for matching resumes
 
-- **Resume Upload:**
+📄 For Candidates
 
-  - After logging in, candidates can easily upload their resumes in PDF format.
-  
-  ![Upload Resume GIF](gifs/upload.gif)
+Resume Upload:
+Candidates can upload their resumes in PDF format, which are securely stored in the database.
 
-### For Companies
+🏢 For Companies
 
-- **Job Description Entry:**
-  - Companies can enter job descriptions to find the best matching resumes after logging in.
+Job Description Entry:
+Companies can enter job descriptions to find the most suitable candidates.
 
-- **Resume Matching:**
-  - Fine Tuned the base spacy english model (en_core_web_sm) to enable to extract all technological keywords.
-  - The system extracts technical keywords from job descriptions, matching them with skills listed in candidates' resumes stored in MongoDB. Candidates with the highest overlap of skills are listed in descending order. Companies can then view and download the resumes of matched candidates.
+Resume Matching (Core Feature):
 
-**Example 1**
+A fine-tuned spaCy English model (en_core_web_sm) is used to extract technical and skill-based keywords.
 
-- User with most overlap of skills is listed first.
-- User with no overlap is not listed.
+Extracted keywords from job descriptions are matched with skills identified in candidate resumes stored in MongoDB.
 
-![Job Description Entry GIF](gifs/matching1.gif)
+Candidates are ranked based on the highest overlap of skills.
 
-**Example 2**
+Candidates with no relevant skill overlap are excluded.
 
-- Users with no overlap are not listed/
+Companies can view and download matched resumes.
 
-![Resume Matching GIF](gifs/matching2.gif)
+📌 Matching Logic Examples
 
-## Tech Stack
-- **Back-End:**
-  - Flask: Python-based micro web framework used to serve the application.
-  - MongoDB: NoSQL database used to store user data and resumes.
-  - SpaCy: Library for advanced Natural Language Processing used to fine tune current base model so that it can extract keywords from job descriptions.
+Candidates with the highest skill overlap appear first.
 
-- **Front-End:**
-  - HTML5: Markup language used for structuring and presenting content.
-  - CSS3: Style-sheet language used for describing the look and formatting of the document.
+Candidates without matching skills are not listed.
 
-- **Infrastructure:**
-  - GitHub: Platform used for version control and collaborative development of the project.
+🛠️ Tech Stack
+Back-End
 
-## Conclusion
-TalentMatch is a robust platform designed to efficiently connect companies with potential candidates by automating the process of matching resumes with job descriptions. Its intuitive interface and secure authentication system provide a user-friendly experience while the sophisticated NLP algorithms ensure accurate and relevant matching, making TalentMatch an invaluable tool for both recruiters and job seekers in the tech industry.
+Flask: Python-based micro web framework for application logic
 
-## Contributing
-Your contributions are always welcome! Feel free to improve existing features, documentation, or add new features. Please open an issue to propose your changes if they are substantial.
+MongoDB: NoSQL database for storing user data and resumes
+
+spaCy: NLP library used for fine-tuning the base model to extract technical keywords
+
+Front-End
+
+HTML5: Structure and content
+
+CSS3: Styling and layout
+
+Infrastructure
+
+GitHub: Version control and collaborative development
+
+✅ Conclusion
+
+CareerConnect is a powerful recruitment support platform that automates resume–job matching using NLP. Its secure authentication system, structured workflow, and intelligent ranking mechanism help recruiters identify the most relevant candidates efficiently, while providing job seekers with a smooth and secure experience.
+
+🤝 Contributing
+
+Contributions are welcome!
+You can contribute by:
+
+Enhancing existing features
+
+Improving documentation
+
+Adding new functionality
