@@ -1,91 +1,85 @@
-CareerConnect – Resume–Job Matching Platform
+# 🚀 CareerConnect – Resume–Job Matching Platform
 
-CareerConnect is a web-based application that streamlines the process of matching candidate resumes with job descriptions using advanced Natural Language Processing (NLP) techniques. It provides an efficient and user-friendly interface for both candidates and companies.
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-2.3-green)](https://flask.palletsprojects.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-6.0-brightgreen)](https://www.mongodb.com/)
+[![spaCy](https://img.shields.io/badge/spaCy-3.5-orange)](https://spacy.io/)
 
-🚀 Features
-🔹 Main Menu & Navigation
+**CareerConnect** is a **web-based application** that streamlines **matching candidate resumes with job descriptions** using advanced **Natural Language Processing (NLP)**. It provides an **efficient and user-friendly interface** for both candidates and companies.
 
-Clean and intuitive user interface
+---
 
-Easy navigation to Login, Registration, About, and Articles sections
+## 🌟 Features
 
-🔐 User Authentication
+### 🔹 Main Menu & Navigation
+- **Clean and intuitive user interface**  
+- Easy navigation to **Login**, **Registration**, **About**, and **Articles** sections
 
-Secure user registration and login
+### 🔐 User Authentication
+- **Secure user registration and login**  
+- **Encrypted password storage** for safety
 
-Encrypted password storage
+### 👤 User Roles
 
-👤 User Roles
-Candidate Registration & Login
+**Candidates**  
+- Secure registration and login  
+- **Upload resumes in PDF format**
 
-Candidates can securely register and log in
+**Companies**  
+- Register and log in  
+- **Post job descriptions** and **search for matching resumes**
 
-Upload resumes in PDF format after authentication
+### 📄 For Candidates
+- **Resume Upload:** Upload resumes in **PDF format**, securely stored in the database
 
-Company Registration & Login
+### 🏢 For Companies
+- **Job Description Entry:** Enter **job descriptions** to find suitable candidates  
+- **Resume Matching (Core Feature):**  
+  - Fine-tuned **spaCy English model (`en_core_web_sm`)** extracts **technical and skill-based keywords**  
+  - Keywords from job descriptions are matched with **candidate skills in MongoDB**  
+  - **Candidates ranked by skill overlap**  
+  - **Candidates with no matching skills are excluded**  
+  - Companies can **view and download matched resumes**
 
-Companies can register and log in
+---
 
-Post job descriptions and search for matching resumes
+### 📌 Matching Logic Examples
+- **Highest skill overlap candidates appear first**  
+- **Candidates without relevant skills are not listed**
 
-📄 For Candidates
+---
 
-Resume Upload:
-Candidates can upload their resumes in PDF format, which are securely stored in the database.
+## 🛠️ Tech Stack
 
-🏢 For Companies
+**Back-End**  
+- **Flask:** Python micro web framework  
+- **MongoDB:** NoSQL database for user data & resumes  
+- **spaCy:** NLP library for keyword extraction
 
-Job Description Entry:
-Companies can enter job descriptions to find the most suitable candidates.
+**Front-End**  
+- **HTML5** – Structure & content  
+- **CSS3** – Styling & layout  
 
-Resume Matching (Core Feature):
+**Infrastructure**  
+- **GitHub** – Version control & collaborative development  
 
-A fine-tuned spaCy English model (en_core_web_sm) is used to extract technical and skill-based keywords.
+---
 
-Extracted keywords from job descriptions are matched with skills identified in candidate resumes stored in MongoDB.
+## ✅ Conclusion
 
-Candidates are ranked based on the highest overlap of skills.
+**CareerConnect** is a **powerful recruitment support platform** that **automates resume–job matching using NLP**. Its **secure authentication system**, **structured workflow**, and **intelligent ranking mechanism** help **recruiters identify the most relevant candidates efficiently**, while providing **job seekers with a smooth and secure experience**.
 
-Candidates with no relevant skill overlap are excluded.
+---
 
-Companies can view and download matched resumes.
+## 🤝 Contributing
 
-📌 Matching Logic Examples
+**Contributions are welcome!**  
 
-Candidates with the highest skill overlap appear first.
+You can contribute by:  
+- **Enhancing existing features**  
+- **Improving documentation**  
+- **Adding new functionality**  
 
-Candidates without matching skills are not listed.
+---
 
-🛠️ Tech Stack
-Back-End
-
-Flask: Python-based micro web framework for application logic
-
-MongoDB: NoSQL database for storing user data and resumes
-
-spaCy: NLP library used for fine-tuning the base model to extract technical keywords
-
-Front-End
-
-HTML5: Structure and content
-
-CSS3: Styling and layout
-
-Infrastructure
-
-GitHub: Version control and collaborative development
-
-✅ Conclusion
-
-CareerConnect is a powerful recruitment support platform that automates resume–job matching using NLP. Its secure authentication system, structured workflow, and intelligent ranking mechanism help recruiters identify the most relevant candidates efficiently, while providing job seekers with a smooth and secure experience.
-
-🤝 Contributing
-
-Contributions are welcome!
-You can contribute by:
-
-Enhancing existing features
-
-Improving documentation
-
-Adding new functionality
+💡 **Tip:** Add a **screenshot or demo GIF** of the platform at the top for a professional look.
