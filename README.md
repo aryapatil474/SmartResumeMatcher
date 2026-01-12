@@ -79,7 +79,3 @@ You can contribute by:
 - **Enhancing existing features**  
 - **Improving documentation**  
 - **Adding new functionality**  
-
----
-
-💡 **Tip:** Add a **screenshot or demo GIF** of the platform at the top for a professional look.
